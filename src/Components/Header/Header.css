@@ -1,0 +1,92 @@
+/* Header.css */
+.Header {
+    height: 100px;
+    background-color: #65B741;
+    transition: transform 0.3s ease;
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.HeaderLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.HeaderPhoto {
+    width: 50px;
+    background-color: #FBF6EE;
+    border-radius: 50%;
+    border: 4px solid #FFB534;
+    margin-right: 10px;
+}
+
+.HeaderText {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.menuToggle {
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+}
+
+.filter {margin-left: 30%;
+    flex-grow: 1; /* Expand to fill remaining space */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchbar { margin: 10%;
+    flex-grow: 1; /* Expand to fill remaining space */
+    text-align: right;
+}
+
+.closeButton {
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+}
+
+.hide {
+    display: none;
+}
+.likedButton{ 
+    padding-top: 2px;
+    font-weight: bolder;
+  color: #FFB534;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+}
+/* Media Query for screens with a max-width of 650px */
+@media (max-width: 650px) {
+    .Header {
+        height: auto;
+    }
+
+    .menuToggle {
+        display: flex; /* Show the burger button */
+    }
+
+    .filter,
+    .searchbar {
+        display: none; /* Hide the filter options and search bar */
+    }
+
+    .menuVisible {
+        transform: translateY(0); /* Slide the header down when menu is visible */
+    }
+
+    .closeButton {
+        display: flex; /* Show the close button */
+    }
+}

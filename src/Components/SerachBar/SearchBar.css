@@ -1,0 +1,17 @@
+.search{ 
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.searchCtn{
+    display: inline;
+    content: #FFB534;
+    border-radius: 20px;
+    width: 180px;
+    padding:10px   10px 10px 20px;
+    background-color: white;
+}
+
+input:focus {
+    outline:none;
+}
