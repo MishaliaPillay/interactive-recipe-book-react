@@ -1,0 +1,29 @@
+/* Filter.css */
+
+.item {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+option {
+  font-size: bold;
+  color: chocolate;
+}
+select option:hover {
+  background-color: lightgreen; /* Add this rule for hover effect */
+}
+select {
+  outline: none;
+}
+
+select option::before {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+select option [value="Breafast"] {
+  background-color: red;
+}
+option {
+  color: chocolate;
+}

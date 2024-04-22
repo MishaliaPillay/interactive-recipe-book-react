@@ -1,92 +1,74 @@
-/* Header.css */
 .Header {
-    height: 100px;
-    background-color: #65B741;
-    transition: transform 0.3s ease;
+  padding-top: 2%;
+  height: 80px;
+  background-color: #65b741;
+  transition: transform 0.3s ease;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem; /* Add some spacing between items */
 }
 
 .HeaderContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .HeaderLink {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 .HeaderPhoto {
-    width: 50px;
-    background-color: #FBF6EE;
-    border-radius: 50%;
-    border: 4px solid #FFB534;
-    margin-right: 10px;
+  width: 50px;
+  background-color: #fbf6ee;
+  border-radius: 50%;
+  border: 4px solid #ffb534;
+  margin-right: 10px;
 }
 
 .HeaderText {
-    font-weight: bolder;
-    font-size: 1.3em;
+  font-weight: bolder;
+  font-size: 1.3em;
 }
 
-.menuToggle {
-    cursor: pointer;
-    display: none; /* Initially hidden on larger screens */
+.likedButton {
+  padding-top: 2px;
+  font-weight: bolder;
+  color: #ffb534;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: white;
+  border: none;
 }
 
-.filter {margin-left: 30%;
-    flex-grow: 1; /* Expand to fill remaining space */
+/* Responsive Styles */
+
+@media (max-width: 850px) {
+  .Header {
+    height: auto; /* Expand header on smaller screens */
+  }
+
+  .HeaderContainer {
+    flex-direction: column; /* Stack items on top of each other */
+  }
+
+  .nav,
+  .actions {
     display: flex;
-    justify-content: flex-end;
-}
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Add some spacing between items */
+  }
 
-.searchbar { margin: 10%;
-    flex-grow: 1; /* Expand to fill remaining space */
-    text-align: right;
-}
-
-.closeButton {
-    cursor: pointer;
-    display: none; /* Initially hidden on larger screens */
-}
-
-.hide {
-    display: none;
-}
-.likedButton{ 
-    padding-top: 2px;
-    font-weight: bolder;
-  color: #FFB534;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: white;
-    border: none;
-}
-/* Media Query for screens with a max-width of 650px */
-@media (max-width: 650px) {
-    .Header {
-        height: auto;
-    }
-
-    .menuToggle {
-        display: flex; /* Show the burger button */
-    }
-
-    .filter,
-    .searchbar {
-        display: none; /* Hide the filter options and search bar */
-    }
-
-    .menuVisible {
-        transform: translateY(0); /* Slide the header down when menu is visible */
-    }
-
-    .closeButton {
-        display: flex; /* Show the close button */
-    }
+  .filter,
+  .searchbar {
+    width: 100%; /* Use full width on smaller screens */
+  }
 }
