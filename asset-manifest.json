@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/interactive-recipe-book/static/css/main.7b87f9ee.css",
+    "main.js": "/interactive-recipe-book/static/js/main.30daf354.js",
+    "static/js/453.0ab33d7d.chunk.js": "/interactive-recipe-book/static/js/453.0ab33d7d.chunk.js",
+    "static/media/ChefHat.png": "/interactive-recipe-book/static/media/ChefHat.38c637f1e4488cf425af.png",
+    "index.html": "/interactive-recipe-book/index.html",
+    "main.7b87f9ee.css.map": "/interactive-recipe-book/static/css/main.7b87f9ee.css.map",
+    "main.30daf354.js.map": "/interactive-recipe-book/static/js/main.30daf354.js.map",
+    "453.0ab33d7d.chunk.js.map": "/interactive-recipe-book/static/js/453.0ab33d7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b87f9ee.css",
+    "static/js/main.30daf354.js"
+  ]
+}
